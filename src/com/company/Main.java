@@ -20,6 +20,7 @@ public class Main {
                 System.out.println("Filename (must be png)?");
                 String path = userIn.nextLine();
                 converter.writeImage(path);
+                System.out.println();
             } else if (userChoice.toLowerCase().equals("d")) {
                 ToTXT decrypter;
                 System.out.println("Filename?");
@@ -29,6 +30,7 @@ public class Main {
                 System.out.println("It says:");
                 decrypter = new ToTXT(userKey,path, 30, 30);
                 System.out.println(decrypter.getText());
+                System.out.println();
             } else if (userChoice.toLowerCase().equals("ex")) break;
         }
     }
