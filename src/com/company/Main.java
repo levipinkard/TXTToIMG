@@ -29,7 +29,10 @@ public class Main {
                 System.out.println("It says:");
                 decrypter = new ToTXT(userKey,path, 30, 30);
                 System.out.println(decrypter.getText());
-            } else if (userChoice.toLowerCase().equals("ex")) break;
+            } else if (userChoice.toLowerCase().equals("ex")) {
+                System.out.println();
+                break;
+            }
         }
     }
 }
