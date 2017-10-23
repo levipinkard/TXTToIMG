@@ -22,8 +22,8 @@ public class ToTXT {
         convertedOut = "";
         char[] encryptChar = encrypt.toCharArray();
         randomGen = new SecureRandom();
-        for (int x = 0; x < encrypt.length(); x++) {
-            seed += (int)encryptChar[x];
+        for (char tempEncrypt : encryptChar) {
+            seed += (int)tempEncrypt;
         }
         randomGen.setSeed(seed);
         for (int y = 0; y < height; y++) {

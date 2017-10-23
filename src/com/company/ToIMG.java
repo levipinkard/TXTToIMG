@@ -19,8 +19,8 @@ public class ToIMG {
         userString = textIn;
         long seed = 0;
         char[] encryptChar = seedIn.toCharArray();
-        for (int x = 0; x < seedIn.length(); x++) {
-            seed += (int)encryptChar[x];
+        for (char encrypt : encryptChar) {
+            seed += (int)encrypt;
         }
         randomGen = new SecureRandom();
         randomGen.setSeed(seed);
